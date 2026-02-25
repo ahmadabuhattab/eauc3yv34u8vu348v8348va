@@ -55,6 +55,42 @@
       margin: 28px auto 0;
     }
 
+    /* ── Featured Image ──────────────────────────────────── */
+    .featured {
+      max-width: 720px;
+      margin: 40px auto 0;
+      padding: 0 20px;
+    }
+
+    .featured img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ── Note Section ────────────────────────────────────── */
+    .note {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 64px 24px 48px;
+      text-align: center;
+    }
+
+    .note-line {
+      width: 32px;
+      height: 2px;
+      background: #ddd;
+      border-radius: 1px;
+      margin: 0 auto 24px;
+    }
+
+    .note p {
+      font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+      color: #888;
+      line-height: 1.75;
+      font-weight: 400;
+    }
+
     /* ── Gallery Grid ─────────────────────────────────────── */
     .gallery {
       max-width: 1320px;
@@ -292,6 +328,11 @@
     <div class="divider"></div>
   </header>
 
+  <!-- Featured Image -->
+  <div class="featured">
+    <img src="images/robot_car.jpg" alt="Robot car project">
+  </div>
+
   <!-- Gallery -->
   <div class="gallery" id="gallery">
     <div class="gallery-item" data-index="0">
@@ -398,9 +439,15 @@
     </div>
   </div>
 
+  <!-- Note -->
+  <div class="note">
+    <div class="note-line"></div>
+    <p>What you see here is just a small snapshot of the types of projects I work on. Beyond this, I have a much broader range of work — advanced multi-layer circuit designs, full CAD assemblies, PCB layouts, embedded systems, robotics, power electronics, mechanical prototyping, and simulation-driven engineering. This gallery is only the surface.</p>
+  </div>
+
   <!-- Footer -->
   <footer>
-    34 Photos
+    35 Photos
   </footer>
 
   <!-- Lightbox -->
